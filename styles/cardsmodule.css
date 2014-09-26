@@ -1,0 +1,126 @@
+.display-rotation-0-deg {
+  -webkit-transform: rotate(1deg) false;
+  transform: rotate(1deg) false;
+}
+.display-rotation-1-deg {
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+.display-rotation-2-deg {
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.search-content {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.slider-container {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  font-family: "Open Sans", sans-serif !important;
+}
+.slider-element {
+  border: 1px solid #c3c3c3;
+  background-color: #eee;
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  max-width: 400px;
+  height: 60%;
+  text-align: center;
+  margin-top: 100px;
+}
+.slider-element .image-container {
+  width: 100%;
+  height: 85%;
+  padding-bottom: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  cursor: move;
+  box-sizing: border-box;
+}
+.slider-element span {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  height: auto;
+}
+.slider-element .likedislike {
+  font-size: 35px;
+  font-weight: 600;
+  z-index: 500;
+  text-align: right;
+  border: 6px solid #ee2e2e;
+  width: auto;
+  margin: auto;
+  padding: 0 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+}
+.slider-element .like {
+  color: #26bd19;
+  border-color: #26bd19;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  right: 0px;
+}
+.slider-element .like.animate-show {
+  transition: all linear 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-element .like.animate-show.active {
+  opacity: 1;
+  visibility: visible;
+}
+.slider-element .dislike {
+  color: #ee2e2e;
+  border-color: #ee2e2e;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  left: 0px;
+}
+.slider-element .dislike.animate-show {
+  transition: all linear 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider-element .dislike.animate-show.active {
+  opacity: 1;
+  visibility: visible;
+}
+.animate-partial {
+  transition: all linear 0.2s;
+}
+.animate-partial.animate-like-partial {
+  -webkit-transform: translate3d(10%, 0, 0) rotate(5deg);
+  transform: translate3d(10%, 0, 0) rotate(5deg);
+}
+.animate-partial.animate-dislike-partial {
+  -webkit-transform: translate3d(-10%, 0, 0) rotate(-5deg);
+  transform: translate3d(-10%, 0, 0) rotate(-5deg);
+}
+.animate {
+  transition: all linear 0.4s;
+}
+.animate.animate-like {
+  -webkit-transform: translate3d(100%, 0, 0) rotate(60deg);
+  transform: translate3d(100%, 0, 0) rotate(60deg);
+  opacity: 0;
+  visibility: hidden;
+}
+.animate-dislike {
+  -webkit-transform: translate3d(-100%, 0, 0) rotate(-60deg);
+  transform: translate3d(-100%, 0, 0) rotate(-60deg);
+  opacity: 0;
+  visibility: hidden;
+}
+
